@@ -1,0 +1,21 @@
+{
+  "name": "anonimizador",
+  "displayName": "Anonymizer",
+  "description": "Anonymizes Excel, CSV, JSON and YAML files locally before Claude sees them, and closes Claude's access to any data file that has not been anonymized.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Eduer Jaramillo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "privacy",
+    "anonymization",
+    "pii",
+    "excel",
+    "csv",
+    "json",
+    "yaml",
+    "gdpr",
+    "habeas-data"
+  ]
+}

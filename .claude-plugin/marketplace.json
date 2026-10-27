@@ -1,0 +1,14 @@
+{
+  "name": "anonimizador",
+  "description": "Privacy plugins for Claude Code: your personal data never reaches the model.",
+  "owner": {
+    "name": "Eduer Jaramillo"
+  },
+  "plugins": [
+    {
+      "name": "anonimizador",
+      "source": "./",
+      "description": "Anonymizes Excel, CSV, JSON and YAML files locally before Claude sees them, and closes Claude's access to any data file that has not been anonymized."
+    }
+  ]
+}

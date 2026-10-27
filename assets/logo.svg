@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <path id="doll" d="M292 560 C296 490 350 450 392 430 C372 400 362 350 362 300 A150 150 0 0 1 662 300 C662 350 652 400 632 430 C674 450 728 490 732 560 C754 660 749 780 704 870 Q684 900 624 900 L400 900 Q340 900 320 870 C275 780 270 660 292 560 Z"/>
+    <path id="shield" d="M512 580 L654 622 C654 742 612 845 512 892 C412 845 370 742 370 622 Z"/>
+    <clipPath id="dollClip"><use href="#doll"/></clipPath>
+    <clipPath id="shieldClip"><use href="#shield"/></clipPath>
+  </defs>
+
+  <g transform="translate(512 0) scale(0.8) translate(-512 -80)" stroke-linejoin="round" stroke-linecap="round">
+    <!-- doll body, two-tone -->
+    <use href="#doll" fill="#2F4D68"/>
+    <rect x="512" y="100" width="400" height="900" fill="#223B52" clip-path="url(#dollClip)"/>
+    <!-- waist seam -->
+    <path d="M292 560 L732 560" stroke="#0F1A26" stroke-width="9"/>
+    <!-- scarf rim + face -->
+    <ellipse cx="512" cy="320" rx="106" ry="122" fill="none" stroke="#C9A24A" stroke-width="18"/>
+    <ellipse cx="512" cy="320" rx="90" ry="106" fill="#E6DCC6" stroke="#0F1A26" stroke-width="12"/>
+    <circle cx="482" cy="310" r="10" fill="#0F1A26"/>
+    <circle cx="542" cy="310" r="10" fill="#0F1A26"/>
+    <path d="M496 358 L528 358" fill="none" stroke="#0F1A26" stroke-width="8"/>
+    <!-- circuit traces on the body -->
+    <g fill="none" stroke="#0F1A26" stroke-width="7">
+      <path d="M352 650 L352 600 L398 568"/>
+      <path d="M672 650 L672 600 L626 568"/>
+      <path d="M372 760 L372 830 L412 862"/>
+      <path d="M652 760 L652 830 L612 862"/>
+    </g>
+    <g fill="#2F4D68" stroke="#0F1A26" stroke-width="7">
+      <circle cx="398" cy="568" r="11"/>
+      <circle cx="626" cy="568" r="11"/>
+      <circle cx="412" cy="862" r="11"/>
+      <circle cx="612" cy="862" r="11"/>
+    </g>
+    <use href="#doll" fill="none" stroke="#0F1A26" stroke-width="16"/>
+
+    <!-- shield -->
+    <use href="#shield" fill="none" stroke="#0F1A26" stroke-width="40"/>
+    <use href="#shield" fill="none" stroke="#C9A24A" stroke-width="22"/>
+    <use href="#shield" fill="#15344C"/>
+    <g clip-path="url(#shieldClip)" fill="none" stroke="#5EC9D4" stroke-width="4" opacity="0.35">
+      <path d="M396 665 L440 665 L458 683"/>
+      <path d="M628 665 L584 665 L566 683"/>
+      <path d="M402 745 L446 745 L446 780"/>
+      <path d="M622 745 L578 745 L578 780"/>
+      <path d="M476 862 L512 836 L548 862"/>
+    </g>
+    <g clip-path="url(#shieldClip)" fill="#5EC9D4" opacity="0.5">
+      <circle cx="396" cy="665" r="6"/><circle cx="628" cy="665" r="6"/>
+      <circle cx="402" cy="745" r="6"/><circle cx="622" cy="745" r="6"/>
+    </g>
+
+    <!-- padlock halo -->
+    <g opacity="0.22" fill="#7FEFF3"><rect x="422" y="640" width="180" height="208" rx="52"/></g>
+    <g opacity="0.30" fill="#7FEFF3"><rect x="436" y="654" width="152" height="180" rx="40"/></g>
+    <!-- padlock -->
+    <path d="M470 718 V688 A42 42 0 0 1 554 688 V718" fill="none" stroke="#D6FBFB" stroke-width="20"/>
+    <rect x="448" y="714" width="128" height="104" rx="20" fill="#D6FBFB"/>
+    <circle cx="512" cy="756" r="14" fill="#15344C"/>
+    <path d="M505 764 L497 798 L527 798 L519 764 Z" fill="#15344C"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="512" y="818" text-anchor="middle" font-family="Inter, 'DejaVu Sans', sans-serif" font-weight="800" font-size="92" letter-spacing="4" fill="#DCEFF2">ANONYMIZER</text>
+  <text x="512" y="880" text-anchor="middle" font-family="Inter, 'DejaVu Sans', sans-serif" font-weight="700" font-size="40" letter-spacing="8" fill="#8FB3C9">FOR CLAUDE CODE</text>
+</svg>

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.egg-info/
+# Never version data: no originals, no generated traps, no fingerprint indices
+sensibles/
+canaries/out/
+*.fp
+# pytest leftovers when it runs with its temporary folder inside the project
+pytest-of-*/
